@@ -80,12 +80,3 @@ add a Plan class which represents a particular shedule of consultations. The cla
 add a constructor of the Plan class, which accepts an existing array of offers as a parameter
 add a method boolean isConflict() which tests, whether there is a conflict between any two items of the schedule (use the isInConflict method of the PlanEvent class)
 add method boolean isOK() which tests, whether the given schedule has at least three consultation of math, each on a different day, and at least two lessons of computers, also each on a different day
-# Task 3 (homework) (up to 4 points)
-add loading offers from a file. Each offer is represented by 5 lines of the input text file in the following order:
-tutor name
-offered subject
-day of week (integer 0-4)
-start time (integer representing the hour)
-end time (integer representing the hour)
-add a method that constructs all possible sets of 5 offers. For each such set, create an instance of the Plan class and test, whether the schedule is correct (use the isOK method) and conflict free (use the isConflict method). Write the correct and conflict free schedules to the console in some reasonable format. 
-test the program on data in the ssc.txt file, which is available on courseware, and finally print out the number of corrent and conflict free schedules the program has found.
