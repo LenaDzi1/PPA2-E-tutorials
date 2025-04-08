@@ -6,15 +6,10 @@ Student Support Centre offers help with math and computer science courses to stu
 The following source code defines a PlanEvent class, which represents one particular offering of a consultation. It defines a method boolean isInConflict(PlanEvent other), which tests, whether or not an offer is in time conflict with another offer (i.e. a time overlap, if an offer ends exactly at the same time as another starts, they are not in conflict). The program contains both syntactic and semantic errors, find them and fix them.
 
 ```
-/**
- * Consultation subjects
- * @author Libor Vasa
- */
 enum Subject {math, computers}
 
 /**
  * An offer of a consultation
- * @author Libor Vasa
  */
 public class PlanEvent {
 	/** tutor name */
@@ -76,7 +71,7 @@ public class PlanEvent {
 ```
 
 # Task 2 (up to 4 points)
-add a Plan class which represents a particular shedule of consultations. The class contains an array of PlanEvent instances representing the particular offers as an attribute
-add a constructor of the Plan class, which accepts an existing array of offers as a parameter
-add a method boolean isConflict() which tests, whether there is a conflict between any two items of the schedule (use the isInConflict method of the PlanEvent class)
-add method boolean isOK() which tests, whether the given schedule has at least three consultation of math, each on a different day, and at least two lessons of computers, also each on a different day
+* add a Plan class which represents a particular shedule of consultations. The class contains an array of PlanEvent instances representing the particular offers as an attribute
+* add a constructor of the Plan class, which accepts an existing array of offers as a parameter
+* add a method boolean isConflict() which tests, whether there is a conflict between any two items of the schedule (use the isInConflict method of the PlanEvent class)
+* add method boolean isOK() which tests, whether the given schedule has at least three consultation of math, each on a different day, and at least two lessons of computers, also each on a different day
